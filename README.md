@@ -11,10 +11,15 @@ graph LR
   routes_py["routes.py"] --> run["run.py"]
   index_html["app/templates/index.html"] --> run["run.py"]
   agent_setup_py["app/agent_setup.py"] --> routes_py
-  r["r_environ"] --> routes_py
+  local.fun["local.py"] --> routes_py
   config_py["config.py"] --> agent_setup_py
   KEY["OPENAI_API_KEY"] --> config_py
   local["local.db"] --> agent_setup_py
+  ssed["SSED"] --> local
+  reg["Guidance/Standards"] --> local
+  methods["Methods"] --> local
+
+
 ```
 
 
