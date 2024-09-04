@@ -1,4 +1,4 @@
-# CDx AI
+# Vista AI
 Version beta v0.01
 
 ## Description
